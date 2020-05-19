@@ -14,7 +14,30 @@ export default {
         content: process.env.npm_package_description || ''
       }
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
+    link: [
+      {
+        rel: 'icon',
+        type: 'stylesheet',
+        href: 'https://compromis.net/sub/fonts/compromis.css'
+      },
+      {
+        rel: 'icon',
+        type: 'image/x-icon',
+        href: 'https://compromis.net/sub/icons/favicon.ico'
+      },
+      {
+        rel: 'icon',
+        type: 'image/png',
+        size: '32x32',
+        href: 'https://compromis.net/sub/icons/favicon32.png'
+      },
+      {
+        rel: 'icon',
+        type: 'image/png',
+        sizes: '192x192',
+        href: 'https://compromis.net/sub/icons/favicon192.png'
+      }
+    ]
   },
   /*
    ** Customize the progress-bar color
