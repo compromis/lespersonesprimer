@@ -3,16 +3,19 @@
     <div>
       <bloc-logo />
       <compromis-logo />
+      <animated-text />
     </div>
   </div>
 </template>
 
 <script>
+import AnimatedText from '~/components/AnimatedText.vue'
 import BlocLogo from '~/components/BlocLogo.vue'
 import CompromisLogo from '~/components/CompromisLogo.vue'
 
 export default {
   components: {
+    AnimatedText,
     BlocLogo,
     CompromisLogo
   }
