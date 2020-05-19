@@ -4,6 +4,7 @@
       <bloc-logo />
       <compromis-logo />
       <animated-text />
+      <signup-form />
     </div>
   </div>
 </template>
@@ -12,12 +13,14 @@
 import AnimatedText from '~/components/AnimatedText.vue'
 import BlocLogo from '~/components/BlocLogo.vue'
 import CompromisLogo from '~/components/CompromisLogo.vue'
+import SignupForm from '~/components/SignupForm.vue'
 
 export default {
   components: {
     AnimatedText,
     BlocLogo,
-    CompromisLogo
+    CompromisLogo,
+    SignupForm
   }
 }
 </script>
