@@ -7,7 +7,7 @@
 module.exports = {
   theme: {
     fontFamily: {
-      body: ['Compromis', 'sans-serif']
+      sans: ['manrope', 'sans-serif']
     },
     colors: {
       orange: '#ff6720',
