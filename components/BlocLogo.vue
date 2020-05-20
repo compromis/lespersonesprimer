@@ -9,17 +9,6 @@
     viewBox="0 0 425.06 160.81"
     style="enable-background:new 0 0 425.06 160.81;"
   >
-    <linearGradient
-      id="SVGID_1_"
-      gradientUnits="userSpaceOnUse"
-      x1="212.5304"
-      y1="159.9707"
-      x2="212.5304"
-      y2="1.2521"
-    >
-      <stop offset="0" style="stop-color:#E28226" />
-      <stop offset="1" style="stop-color:#D44127" />
-    </linearGradient>
     <path
       class="st0"
       d="M425.06,0H0v129.17c0,17.4,14.24,31.64,31.64,31.64h361.78c17.4,0,31.64-14.24,31.64-31.64V0z"
@@ -67,14 +56,11 @@
 
 <style>
 .st0 {
-  fill: url(#SVGID_1_);
+  fill: currentColor;
 }
 .st1 {
   fill-rule: evenodd;
   clip-rule: evenodd;
   fill: #ffffff;
-}
-.st2 {
-  fill: url(#SVGID_2_);
 }
 </style>

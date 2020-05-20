@@ -2,7 +2,8 @@
   <div class="container">
     <div>
       <bloc-logo />
-      <compromis-logo />
+      <compromis-logo mono />
+      <jovespv-logo mono />
       <animated-text />
       <signup-form />
     </div>
@@ -13,6 +14,7 @@
 import AnimatedText from '~/components/AnimatedText.vue'
 import BlocLogo from '~/components/BlocLogo.vue'
 import CompromisLogo from '~/components/CompromisLogo.vue'
+import JovespvLogo from '~/components/JovespvLogo.vue'
 import SignupForm from '~/components/SignupForm.vue'
 
 export default {
@@ -20,6 +22,7 @@ export default {
     AnimatedText,
     BlocLogo,
     CompromisLogo,
+    JovespvLogo,
     SignupForm
   }
 }
