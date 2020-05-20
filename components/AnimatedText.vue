@@ -6,7 +6,9 @@
         <transition name="fade" mode="out-in">
           <template v-for="(sentence, i) in sentences">
             <div v-if="showing === i" :key="i">
-              {{ sentence }}
+              <span v-for="(word, w) in sentence.split(' ')" :key="w" class="word" :style="{ animationDelay: `${100 * (w + 1)}ms` }">
+                {{ word }}&nbsp;
+              </span>
             </div>
           </template>
         </transition>
@@ -51,11 +53,30 @@ export default {
 }
 .fade-enter {
   opacity: 0;
-  transform: translateY(1rem);
+  transform: translateX(-1rem);
 }
 
 .fade-leave-to {
   opacity: 0;
-  transform: translateY(-1rem);
+  transform: translateX(1rem);
+}
+
+.word {
+  display: inline-block;
+  animation-name: fadeUp;
+  animation-duration: 200ms;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@keyframes fadeUp {
+  from {
+    transform: translateY(1rem);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 </style>
