@@ -17,7 +17,7 @@
 
 <script>
 export default {
-  data() {
+  data () {
     return {
       sentences: [
         'esta crisi no la poden pagar els de sempre',
@@ -28,12 +28,12 @@ export default {
     }
   },
 
-  mounted() {
+  mounted () {
     this.iterate()
   },
 
   methods: {
-    iterate() {
+    iterate () {
       setTimeout(() => {
         const max = this.sentences.length - 1
         this.showing = this.showing === max ? 0 : this.showing + 1

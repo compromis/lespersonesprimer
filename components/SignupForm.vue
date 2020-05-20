@@ -5,10 +5,10 @@
     target="_blank"
   >
     <label for="name">Nom</label>
-    <input id="name" type="text" value="" name="FNAME" />
+    <input id="name" type="text" value="" name="FNAME">
 
     <label for="email">E-mail</label>
-    <input id="email" type="email" value="" name="EMAIL" required />
+    <input id="email" type="email" value="" name="EMAIL" required>
 
     <div style="position: absolute; left: -5000px;" aria-hidden="true">
       <input
@@ -16,10 +16,12 @@
         name="b_548d01f210a82f864a46690ac_75e80c8517"
         tabindex="-1"
         value=""
-      />
+      >
     </div>
 
-    <button type="submit">M'apunte</button>
+    <button type="submit">
+      M'apunte
+    </button>
   </form>
 </template>
 
