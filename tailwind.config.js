@@ -8,7 +8,7 @@ module.exports = {
   theme: {
     fontFamily: {
       sans: ['manrope', 'sans-serif'],
-      display: ['Oswald', 'sans-serif']
+      display: ['Fixture', 'sans-serif']
     },
     colors: {
       orange: '#ff6720',

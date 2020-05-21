@@ -4,3 +4,9 @@
 /* purgecss end ignore */
 @import 'tailwindcss/utilities';
 
+@font-face {
+  font-family: 'Fixture';
+  src: url('../fonts/Fixture-CondensedMedium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}

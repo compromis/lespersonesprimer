@@ -1,7 +1,7 @@
 <template>
   <div class="container mx-auto h-screen flex lg:items-center justify-center">
     <div class="relative grid grid-cols-1 gap-6 lg:grid-cols-2 m-4 z-20">
-      <h2 class="pt-2 font-display text-white text-4xl lg:text-5xl uppercase font-bold leading-tight">
+      <h2 class="pt-2 font-display text-white text-5xl lg:text-6xl uppercase font-bold leading-none">
         Les <br class="hidden lg:block"> persones <br class="hidden lg:block"> Primer
       </h2>
       <animated-text class="lg:text-right max-w-md text-white min-h-15" />
@@ -41,7 +41,7 @@
         </div>
       </div>
       <div class="lg:ml-auto lg:text-right">
-        <div class="text-xl text-white">
+        <div class="text-xl text-white mb-4">
           Apunta't a la campanya
         </div>
         <signup-form />
@@ -72,9 +72,11 @@ export default {
 </script>
 
 <style>
-/* Sample `apply` at-rules with Tailwind CSS
-.container {
-  @apply min-h-screen flex justify-center items-center text-center mx-auto;
-}
-*/
+  a {
+    @apply text-white transition-all duration-150;
+  }
+
+  a:hover {
+    @apply opacity-75;
+  }
 </style>
