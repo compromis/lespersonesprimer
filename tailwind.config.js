@@ -7,7 +7,8 @@
 module.exports = {
   theme: {
     fontFamily: {
-      sans: ['manrope', 'sans-serif']
+      sans: ['manrope', 'sans-serif'],
+      display: ['Oswald', 'sans-serif']
     },
     colors: {
       orange: '#ff6720',
@@ -16,7 +17,12 @@ module.exports = {
         600: '#979aa4'
       },
       white: '#fff',
-      dark: '#353949'
+      dark: '#353949',
+      transparent: 'transparent'
+    },
+    minHeight: {
+      15: '15rem',
+      30: '30rem'
     }
   },
   variants: {},

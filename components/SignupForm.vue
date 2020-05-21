@@ -3,12 +3,20 @@
     action="https://compromis.us18.list-manage.com/subscribe/post?u=548d01f210a82f864a46690ac&amp;id=75e80c8517"
     method="post"
     target="_blank"
+    class="max-w-xs text-white"
   >
-    <label for="name">Nom</label>
-    <input id="name" type="text" value="" name="FNAME">
+    <label for="name" class="block mb-2 text-left">Nom</label>
+    <input id="name" class="block mb-2 appearance-none border-2 bg-transparent py-1 px-1 mr-0" type="text" value="" name="FNAME">
 
-    <label for="email">E-mail</label>
-    <input id="email" type="email" value="" name="EMAIL" required>
+    <label for="email" class="block mb-2 text-left">E-mail</label>
+    <input
+      id="email"
+      class="block mb-2 appearance-none border-2 bg-transparent py-1 px-1 mr-0"
+      type="email"
+      value=""
+      name="EMAIL"
+      required
+    >
 
     <div style="position: absolute; left: -5000px;" aria-hidden="true">
       <input
@@ -19,7 +27,7 @@
       >
     </div>
 
-    <button type="submit">
+    <button type="submit" class="bg-dark hover:bg-dark text-white font-bold py-2 px-4 rounded mr-2 mt-4">
       M'apunte
     </button>
   </form>

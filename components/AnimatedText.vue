@@ -1,8 +1,8 @@
 <template>
   <div>
     <h2>
-      <span>Si penses que...</span>
-      <div class="sentences">
+      <span class="text-lg lg:text-2xl font-bold">Si penses que...</span>
+      <div class="sentences text-3xl lg:text-4xl font-bold leading-tight max-w-md">
         <transition name="fade" mode="out-in">
           <template v-for="(sentence, i) in sentences">
             <div v-if="showing === i" :key="i">
@@ -22,7 +22,7 @@ export default {
   data () {
     return {
       sentences: [
-        'esta crisi no la poden pagar els de sempre',
+        'esta crisi no la podem pagar els de sempre',
         "s'ha de blindar la sanitat pública i dotar-la dels recursos que necessita",
         'les persones van primer'
       ],
