@@ -18,11 +18,16 @@ module.exports = {
       },
       white: '#fff',
       dark: '#353949',
-      transparent: 'transparent'
+      darker: '#292d3b',
+      transparent: 'transparent',
+      semitransparent: 'rgba(255, 255, 255, 0.75)'
     },
     minHeight: {
       15: '15rem',
       30: '30rem'
+    },
+    boxShadow: {
+      outline: '0 0 0 3px rgba(0, 0, 0, 0.25)'
     }
   },
   variants: {},

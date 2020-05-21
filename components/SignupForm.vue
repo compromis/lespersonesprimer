@@ -3,20 +3,31 @@
     action="https://compromis.us18.list-manage.com/subscribe/post?u=548d01f210a82f864a46690ac&amp;id=75e80c8517"
     method="post"
     target="_blank"
-    class="max-w-xs text-white"
   >
-    <label for="name" class="block mb-2 text-left">Nom</label>
-    <input id="name" class="block mb-2 appearance-none border-2 bg-transparent py-1 px-1 mr-0" type="text" value="" name="FNAME">
+    <div class="field flex items-center mb-3">
+      <input
+        id="name"
+        class="w-full block appearance-none border-2 bg-transparent py-1 px-2 mr-0 placeholder-semitransparent focus:outline-none focus:shadow-outline"
+        type="text"
+        value=""
+        name="FNAME"
+        placeholder="Nom"
+      >
+      <label for="name" class="hidden lg:block w-32 mr-2 opacity-0 transition-opacity duration-200 order-first">Nom</label>
+    </div>
 
-    <label for="email" class="block mb-2 text-left">E-mail</label>
-    <input
-      id="email"
-      class="block mb-2 appearance-none border-2 bg-transparent py-1 px-1 mr-0"
-      type="email"
-      value=""
-      name="EMAIL"
-      required
-    >
+    <div class="field flex items-center">
+      <input
+        id="email"
+        class="w-full block appearance-none border-2 bg-transparent py-1 px-2 mr-0 placeholder-semitransparent focus:outline-none focus:shadow-outline"
+        type="email"
+        value=""
+        name="EMAIL"
+        placeholder="E-mail"
+        required
+      >
+      <label for="email" class="hidden lg:block w-32 mr-2 opacity-0 transition-opacity duration-200 order-first">E-mail</label>
+    </div>
 
     <div style="position: absolute; left: -5000px;" aria-hidden="true">
       <input
@@ -27,7 +38,7 @@
       >
     </div>
 
-    <button type="submit" class="bg-dark hover:bg-dark text-white font-bold py-2 px-4 rounded mr-2 mt-4">
+    <button type="submit" class="bg-dark hover:bg-darker text-white font-bold py-2 px-4 rounded mt-4 focus:outline-none focus:shadow-outline">
       M'apunte
     </button>
   </form>
@@ -37,4 +48,8 @@
 export default {}
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+  input:not(:placeholder-shown) + label {
+    @apply opacity-100;
+  }
+</style>
