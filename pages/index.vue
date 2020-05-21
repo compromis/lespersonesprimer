@@ -1,12 +1,12 @@
 <template>
-  <div class="container mx-auto h-screen flex lg:items-center justify-center">
-    <div class="relative grid grid-cols-1 gap-6 lg:grid-cols-2 m-4 z-20">
-      <h2 class="pt-2 font-display text-white text-5xl lg:text-6xl uppercase font-bold leading-none">
+  <div class="container mx-auto max-w-screen-lg h-screen flex lg:items-center justify-center text-white">
+    <div class="relative grid grid-cols-1 gap-6 lg:grid-cols-2 w-full m-4 z-20">
+      <h2 class="pt-2 font-display text-5xl lg:text-6xl uppercase font-bold leading-none">
         Les <br class="hidden lg:block"> persones <br class="hidden lg:block"> Primer
       </h2>
-      <animated-text class="lg:text-right max-w-md text-white min-h-15" />
-      <div class="lg:col-span-2 text-white">
-        <a href="#" class="flex flex-row text-xl mb-auto items-center">
+      <animated-text class="lg:text-right lg:ml-auto min-h-15" />
+      <div class="lg:col-span-2">
+        <a href="#" class="inline-flex flex-row text-xl mb-auto items-center origin-center transition-transform duration-200 transform scale-100 hover:scale-110">
           <svg
             version="1.1"
             x="0px"
@@ -28,20 +28,27 @@
               />
             </g>
           </svg>
-          Video</a>
+          Vídeo
+        </a>
       </div>
-      <div class="flex flex-col text-white mt-auto row-start-6 lg:row-start-3 mb-4 lg:mb-0">
+      <div class="flex flex-col mt-auto row-start-6 lg:row-start-3 mb-4 lg:mb-0">
         <div>
-          <a href="#" class="text-white underline">Informació sobre Covid-19</a>
-          <div class="flex flex-row items-end mt-2">
-            <bloc-logo class="h-8 current-color text-white mr-4" />
-            <compromis-logo class="h-8 current-color text-white mr-4" mono />
-            <jovespv-logo class="h-8 current-color text-white mr-4" mono />
+          <a href="https://compromis.net/coronavirus" class="underline" target="_blank">Informació sobre Covid-19</a>
+          <div class="flex flex-col md:flex-row md:items-end mt-4">
+            <a href="https://bloc.compromis.net" target="_blank">
+              <bloc-logo class="h-8 current-color mb-3 md:mb-0 md:mr-4" />
+            </a>
+            <a href="https://compromis.net" target="_blank">
+              <compromis-logo class="h-8 current-color mb-3 md:mb-0 md:mr-4" mono />
+            </a>
+            <a href="https://jovespv.org" target="_blank">
+              <jovespv-logo class="h-8 current-color mb-3 md:mb-0 md:mr-4" mono />
+            </a>
           </div>
         </div>
       </div>
       <div class="lg:ml-auto lg:text-right">
-        <div class="text-xl text-white mb-4">
+        <div class="text-xl mb-4">
           Apunta't a la campanya
         </div>
         <signup-form />
