@@ -1,7 +1,7 @@
 <template>
   <div class="container mx-auto h-screen flex lg:items-center justify-center text-white">
     <transition name="slide" mode="out-in">
-      <div v-if="!showModal" class="relative grid grid-cols-1 gap-6 lg:grid-cols-2 w-full m-4 z-20">
+      <div v-if="!showModal" key="content" class="relative grid grid-cols-1 gap-6 lg:grid-cols-2 w-full m-4 z-20">
         <h2 class="text-orange pt-2 font-display text-5xl lg:text-6xl uppercase font-bold leading-none">
           Les <br class="hidden lg:block"> persones <br class="hidden lg:block"> Primer
         </h2>
@@ -38,17 +38,19 @@
           <signup-form />
         </div>
       </div>
-      <div v-if="showModal" class="flex items-center justify-center z-30">
+      <div v-if="showModal" key="modal" class="flex items-center justify-center z-30 py-16 h-screen w-screen">
         <button class="text-5xl appearance-none text-white absolute top-0 right-0 w-16 focus:outline-none focus:shadow-outline" @click="toggleModal">
           ×
         </button>
-        <iframe
-          src="https://www.youtube.com/embed/md9HY2KhN5o"
-          frameborder="0"
-          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-          class="w-screen h-auto py-16 lg:h-screen lg:px-20"
-        />
+        <div class="embed-responsive aspect-ratio-16/9">
+          <iframe
+            src="https://www.youtube.com/embed/md9HY2KhN5o"
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+            class="embed-responsive-item"
+          />
+        </div>
       </div>
     </transition>
     <video-background />
@@ -99,11 +101,11 @@ export default {
   }
 
   .slide-enter-active {
-    @apply transition-all duration-300;
+    @apply transition-all duration-500;
   }
 
   .slide-leave-active {
-    @apply transition-all duration-100;
+    @apply transition-all duration-300;
   }
 
   .slide-enter, .slide-leave-to {
