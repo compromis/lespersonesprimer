@@ -23,7 +23,7 @@ export default {
     return {
       sentences: [
         'esta crisi no la podem pagar els de sempre',
-        "s'ha de blindar la sanitat pública i dotar-la dels recursos que necessita",
+        's’ha de blindar la sanitat pública i dotar-la dels recursos que necessita',
         'les persones van primer'
       ],
       showing: 0

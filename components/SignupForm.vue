@@ -7,7 +7,7 @@
     <div class="field flex items-center mb-3">
       <input
         id="name"
-        class="w-full block appearance-none border-2 bg-transparent py-1 px-2 mr-0 placeholder-semitransparent focus:outline-none focus:shadow-outline"
+        class="w-full block appearance-none border-2 bg-transparent py-1 px-2 mr-0 rounded placeholder-semitransparent focus:outline-none focus:border-orange"
         type="text"
         value=""
         name="FNAME"
@@ -19,7 +19,7 @@
     <div class="field flex items-center">
       <input
         id="email"
-        class="w-full block appearance-none border-2 bg-transparent py-1 px-2 mr-0 placeholder-semitransparent focus:outline-none focus:shadow-outline"
+        class="w-full block appearance-none border-2 bg-transparent py-1 px-2 mr-0 rounded placeholder-semitransparent focus:outline-none focus:border-orange"
         type="email"
         value=""
         name="EMAIL"
@@ -38,8 +38,8 @@
       >
     </div>
 
-    <button type="submit" class="bg-dark hover:bg-darker text-white font-bold py-2 px-4 rounded mt-4 focus:outline-none focus:shadow-outline">
-      M'apunte
+    <button type="submit" class="bg-orange hover:bg-white text-white hover:text-orange font-bold py-2 px-4 rounded mt-4">
+      M’apunte
     </button>
   </form>
 </template>

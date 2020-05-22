@@ -17,8 +17,7 @@ export default {
     ],
     link: [
       {
-        rel: 'icon',
-        type: 'stylesheet',
+        rel: 'stylesheet',
         href: 'https://compromis.net/sub/fonts/compromis.css'
       },
       {
@@ -38,7 +37,10 @@ export default {
         sizes: '192x192',
         href: 'https://compromis.net/sub/icons/favicon192.png'
       }
-    ]
+    ],
+    htmlAttrs: {
+      class: ['bg-dark text-white']
+    }
   },
   /*
    ** Customize the progress-bar color
