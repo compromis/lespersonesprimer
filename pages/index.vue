@@ -42,13 +42,12 @@
         <button class="text-5xl appearance-none text-white absolute top-0 right-0 w-16 focus:outline-none focus:shadow-outline" @click="toggleModal">
           ×
         </button>
-        <div class="embed-responsive aspect-ratio-16/9">
+        <div class="embed-responsive">
           <iframe
-            src="https://www.youtube.com/embed/md9HY2KhN5o"
+            src="https://www.youtube.com/embed/md9HY2KhN5o/?autoplay=1"
             frameborder="0"
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
-            class="embed-responsive-item"
           />
         </div>
       </div>
@@ -98,6 +97,25 @@ export default {
 
   a:hover {
     @apply opacity-75;
+  }
+
+  .embed-responsive {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 0;
+    overflow: hidden;
+    padding-top: 56.25%;
+  }
+
+  .embed-responsive iframe {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
   }
 
   .slide-enter-active {

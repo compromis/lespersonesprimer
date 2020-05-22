@@ -66,7 +66,7 @@
   </svg>
 </template>
 
-<style type="text/css">
+<style>
   .st0 {
     fill: currentColor;
   }

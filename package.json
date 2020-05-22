@@ -12,10 +12,7 @@
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore ."
   },
   "dependencies": {
-    "node-sass": "^4.14.1",
-    "nuxt": "^2.0.0",
-    "sass-loader": "^8.0.2",
-    "tailwindcss-responsive-embed": "^1.0.0"
+    "nuxt": "^2.0.0"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^2.0.0",

@@ -162,30 +162,30 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style scoped>
 .letter {
   fill: #373a49;
 }
+
 .background {
   fill: #ffffff;
 }
+
 .estrela {
   fill: #e7600c;
 }
-.mono {
-  .letter {
-    fill: currentColor;
-  }
-  .estrela {
-    fill: currentColor;
-  }
-  .background {
-    display: none;
-  }
+
+.mono .letter {
+  fill: currentColor;
 }
-.inverted {
-  .letter {
-    fill: white;
-  }
+.mono .estrela {
+  fill: currentColor;
+}
+.mono .background {
+  display: none;
+}
+
+.inverted .letter {
+  fill: white;
 }
 </style>

@@ -111,7 +111,7 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style scoped>
 .letter {
   fill: #353949;
 }
@@ -121,20 +121,16 @@ export default {
 .careta {
   fill: url(#compromisGradient);
 }
-.mono {
-  .letter {
-    fill: currentColor;
-  }
-  .careta {
-    fill: currentColor;
-  }
-  .background {
-    display: none;
-  }
+.mono .letter {
+  fill: currentColor;
 }
-.inverted {
-  .letter {
-    fill: white;
-  }
+.mono .careta {
+  fill: currentColor;
+}
+.mono .background {
+  display: none;
+}
+.inverted .letter {
+  fill: white;
 }
 </style>
