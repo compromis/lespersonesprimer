@@ -44,7 +44,7 @@
   </form>
 </template>
 
-<style lang="scss" scoped>
+<style scoped>
   input:not(:placeholder-shown) + label {
     @apply opacity-100;
   }

@@ -25,5 +25,6 @@ module.exports = {
       15: '15rem',
       30: '30rem'
     }
-  }
+  },
+  purge: ['./src/**/*.html', './src/**/*.vue']
 }
