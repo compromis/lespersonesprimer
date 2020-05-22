@@ -127,7 +127,7 @@ export default {
   }
 
   .slide-enter, .slide-leave-to {
-    @apply opacity-0 -translate-y-6;
+    @apply opacity-0 transform -translate-y-6;
   }
 
   @media (min-width: 1280px) {
