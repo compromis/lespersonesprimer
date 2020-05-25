@@ -130,9 +130,9 @@ export default {
     @apply opacity-0 transform -translate-y-6;
   }
 
-  @media (min-width: 1280px) {
+  @media (min-width: 1480px) {
     html {
-      font-size: 1.25rem;
+      @apply .text-xl;
     }
   }
 </style>
