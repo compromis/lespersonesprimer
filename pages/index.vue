@@ -19,14 +19,8 @@
             </a>
 
             <div class="flex flex-col md:flex-row md:items-end mt-4">
-              <a href="https://bloc.compromis.net" target="_blank">
-                <bloc-logo class="h-8 current-color mb-3 md:mb-0 md:mr-4" />
-              </a>
               <a href="https://compromis.net" target="_blank">
                 <compromis-logo class="h-8 current-color mb-3 md:mb-0 md:mr-4" mono />
-              </a>
-              <a href="https://jovespv.org" target="_blank">
-                <jovespv-logo class="h-8 current-color mb-3 md:mb-0 md:mr-4" mono />
               </a>
             </div>
           </div>
@@ -58,9 +52,7 @@
 
 <script>
 import AnimatedText from '~/components/AnimatedText.vue'
-import BlocLogo from '~/components/BlocLogo.vue'
 import CompromisLogo from '~/components/CompromisLogo.vue'
-import JovespvLogo from '~/components/JovespvLogo.vue'
 import SignupForm from '~/components/SignupForm.vue'
 import VideoBackground from '~/components/VideoBackground.vue'
 import MaskIcon from '~/components/icons/MaskIcon.vue'
@@ -68,9 +60,7 @@ import MaskIcon from '~/components/icons/MaskIcon.vue'
 export default {
   components: {
     AnimatedText,
-    BlocLogo,
     CompromisLogo,
-    JovespvLogo,
     SignupForm,
     VideoBackground,
     MaskIcon
