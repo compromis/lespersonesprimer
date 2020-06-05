@@ -38,6 +38,8 @@
       >
     </div>
 
+    <p class="text-xs opacity-50 mt-3" style="line-height: 1.1;">Les dades de caràcter personal que ens proporciones a aquest formulari seran tractades per <strong>Compromís</strong>. La finalitat de la recollida i tractament de les dades és enviar-te comunicacions relacionades amb la campanya. Les dades no se cediran a tercers, a menys que així ho exigisca una llei. Pots donar-te de baixa fent clic a l'enllaç adjunt al final de cada e-mail. Consulta la nostra <a href="https://compromis.net/avis-legal" target="_blank" class="underline">Política de Privacitat</a>.</p>
+
     <button type="submit" class="bg-orange hover:bg-white text-white hover:text-orange font-bold py-2 px-4 rounded mt-4">
       M’apunte
     </button>
