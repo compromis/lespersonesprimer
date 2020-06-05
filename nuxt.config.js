@@ -13,7 +13,7 @@ export default {
         name: 'description',
         content: 'Si penses que s\'ha de blindar la sanitat pública i dotar-la dels recursos que necessita... les persones primer'
       },
-      { property: 'og:image', content: '/thumbnail.png' }
+      { property: 'og:image', content: 'https://lespersonesprimer.com/ogimage.png' }
     ],
     link: [
       {
