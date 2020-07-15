@@ -7,9 +7,12 @@
         </h2>
         <animated-text class="lg:text-right lg:ml-auto min-h-15" />
         <div class="lg:col-span-2">
-          <button class="appearance-none inline-flex flex-row text-xl mb-auto items-center origin-center transition-transform duration-200 transform scale-100 hover:scale-110 focus:outline-none focus:shadow-outline" @click="toggleModal">
+          <button class="appearance-none flex flex-row text-xl mb-2 items-center origin-center transition-transform duration-200 transform scale-100 hover:scale-110 focus:outline-none focus:shadow-outline" @click="toggleModal">
             <span class="text-3xl mr-2">(>)</span> Vídeo
           </button>
+          <a href="/propostes-lespersonesprimer.pdf" class="inline-flex flex-row text-xl mb-auto items-center origin-center transition-transform duration-200 transform scale-100 hover:scale-110 focus:outline-none focus:shadow-outline">
+            <span class="text-3xl mr-2"><document-icon class="h-6 w-6 ml-1 mr-1 -mt-2 inline-block" /></span> Propostes
+          </a>
         </div>
         <div class="flex flex-col mt-auto row-start-6 lg:row-start-3 mb-4 lg:mb-0">
           <div>
@@ -56,6 +59,7 @@ import CompromisLogo from '~/components/CompromisLogo.vue'
 import SignupForm from '~/components/SignupForm.vue'
 import VideoBackground from '~/components/VideoBackground.vue'
 import MaskIcon from '~/components/icons/MaskIcon.vue'
+import DocumentIcon from '~/components/icons/DocumentIcon.vue'
 
 export default {
   components: {
@@ -63,7 +67,8 @@ export default {
     CompromisLogo,
     SignupForm,
     VideoBackground,
-    MaskIcon
+    MaskIcon,
+    DocumentIcon
   },
 
   data () {
