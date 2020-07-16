@@ -10,9 +10,22 @@
           <button class="appearance-none flex flex-row text-xl mb-2 items-center origin-center transition-transform duration-200 transform scale-100 hover:scale-110 focus:outline-none focus:shadow-outline" @click="toggleModal">
             <span class="text-3xl mr-2">(>)</span> Vídeo
           </button>
-          <a href="/propostes-lespersonesprimer.pdf" class="inline-flex flex-row text-xl mb-auto items-center origin-center transition-transform duration-200 transform scale-100 hover:scale-110 focus:outline-none focus:shadow-outline">
-            <span class="text-3xl mr-2"><document-icon class="h-6 w-6 ml-1 mr-1 -mt-2 inline-block" /></span> Propostes
-          </a>
+          <ul>
+            <li>
+              <a href="/propostes-lespersonesprimer.pdf" class="inline-flex flex-row text-xl mb-auto items-center origin-center transition-transform duration-200 transform scale-100 hover:scale-110 focus:outline-none focus:shadow-outline">
+                <span class="text-3xl mr-2"><document-icon class="h-6 w-6 ml-1 mr-1 -mt-2 inline-block" /></span>
+                Propostes
+                <span class="text-sm opacity-50 ml-2">(valencià)</span>
+              </a>
+            </li>
+            <li>
+              <a href="/propuestas-laspersonasprimero.pdf" class="inline-flex flex-row text-xl mb-auto items-center origin-center transition-transform duration-200 transform scale-100 hover:scale-110 focus:outline-none focus:shadow-outline">
+                <span class="text-3xl mr-2"><document-icon class="h-6 w-6 ml-1 mr-1 -mt-2 inline-block" /></span>
+                Propuestas
+                <span class="text-sm opacity-50 ml-2">(castellano)</span>
+              </a>
+            </li>
+          </ul>
         </div>
         <div class="flex flex-col mt-auto row-start-6 lg:row-start-3 mb-4 lg:mb-0">
           <div>
